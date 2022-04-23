@@ -74,7 +74,7 @@ else{
         <h5 class="modal-title" id="editModalLabel">Edit Note</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="/curd/index.php" method="post">
+      <form action="/index.php" method="post">
       <div class="modal-body">
         <input type="hidden" name="snoEdit" id="snoEdit">
             <div class="mb-3">
@@ -140,7 +140,7 @@ else{
 
 <div class="container my-3">
   <h2>Add a Note</h2>
-  <form action="/curd/index.php" method="post">
+  <form action="/index.php" method="post">
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
       <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
@@ -217,7 +217,7 @@ else{
       sno=e.target.id.substr(1,);
       if(confirm("Are you sure you want to delete this note")){
         console.log("Yes");
-        window.location=`/curd/index.php?delete=${sno}`;
+        window.location=`/index.php?delete=${sno}`;
       }
       else{
         console.log("No");
