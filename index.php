@@ -74,7 +74,7 @@ else{
         <h5 class="modal-title" id="editModalLabel">Edit Note</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="index.php" method="post">
+      <form action="index.php" method="post" netlify>
       <div class="modal-body">
         <input type="hidden" name="snoEdit" id="snoEdit">
             <div class="mb-3">
